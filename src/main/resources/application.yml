@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: travelTec
+  datasource:
+    url: jdbc:postgresql://localhost:5473/travelAssistantDB
+    username: travelAssistantUsername
+    password: travelAssistantPassword
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: validate
+
+telegram:
+  botName: AqmolaTravelAssistantBot
+  bot-token: 7784993603:AAHH0eZo4PmOYJ6JDB_GALrg9EVhuX_Yf2Y
+
+openai:
+  uri: https://api.openai.com/v1
+  assistantKey: asst_i4OgHhEltaELrUS8FFTCVNhe
+  apiKey: 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

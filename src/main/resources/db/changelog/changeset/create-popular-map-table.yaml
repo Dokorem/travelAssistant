@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-popular-map
+      author: dokorem
+      changes:
+        - createTable:
+            tableName: popular_map
+            columns:
+              - column:
+                  name: id
+                  type: serial
+                  constraints:
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: TEXT
+              - column:
+                 name: map_url
+                 type: varchar(500)
+                 constraints:
+                   nullable: false
